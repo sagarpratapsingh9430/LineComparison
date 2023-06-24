@@ -17,7 +17,7 @@ class Line{
 }
 public class LineComparison {
     public static void main(String[] args) {
-        System.out.println("Welcome to Line Comparison Computation Program on Master Branch");
+        
         Line l1=new Line();
         l1.ep1=new Point();
         l1.ep1.x=1;
