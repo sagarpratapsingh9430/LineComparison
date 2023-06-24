@@ -44,10 +44,14 @@ public class LineComparison {
         Float length2 = l2.calculateLength();
         System.out.println("Length2 = "+length2);
 
-        if (length1.equals(length2)){
-            System.out.println("Both line are equal: ");
-        }else {
-            System.out.println("Both line are not equal: ");
+        if(length1.compareTo(length2)==0){
+            System.out.println("Both are equal");
+
+        } else if (length1.compareTo(length2)==1) {
+            System.out.println("L1 is greater than L2");
+        }
+        else {
+            System.out.println("L2 is greater than L1:");
         }
     }
 }
