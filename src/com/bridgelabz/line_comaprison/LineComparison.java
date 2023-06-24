@@ -17,7 +17,7 @@ class Line{
 }
 public class LineComparison {
     public static void main(String[] args) {
-        
+
         Line l1=new Line();
         l1.ep1=new Point();
         l1.ep1.x=1;
@@ -43,5 +43,11 @@ public class LineComparison {
 
         Float length2 = l2.calculateLength();
         System.out.println("Length2 = "+length2);
+
+        if (length1.equals(length2)){
+            System.out.println("Both line are equal: ");
+        }else {
+            System.out.println("Both line are not equal: ");
+        }
     }
 }
